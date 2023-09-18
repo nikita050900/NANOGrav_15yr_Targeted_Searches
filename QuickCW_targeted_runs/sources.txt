@@ -1,0 +1,3 @@
+3C66B		(ra = '02h23m11.5s', dec = '+42d59m30s') TargFreq: 6.0358262e-8
+NGC3115		(ra = '10h05m13.978s', dec = '-07d43m06.89s')	TargFreq = 1e-8
+

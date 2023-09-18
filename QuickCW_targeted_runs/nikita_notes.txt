@@ -1,0 +1,21 @@
+squeue -u na00078
+sbatch SBATCH.sh
+
+
+from astropy import units as u
+from astropy.coordinates import SkyCoord
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
+from matplotlib import patheffects
+from matplotlib import text
+import healpy as hp
+from healpy.newvisufunc import projview, newprojplot
+
+###############
+    #targeted search params-LondonAdd
+    c = SkyCoord(ra = '02h23m11.5s', dec = '+42d59m30s')
+    cos_gwtheta = np.cos(np.pi/2 - c.dec.radian)
+    gwphi = c.ra.radian
+    #targeted freq
+    TargFreq = 6.0358262e-8
+    freq_bounds=np.array([TargFreq-.5e-8, TargFreq+.5e-8])
